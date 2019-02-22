@@ -37,20 +37,20 @@
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.panelPhoto = new System.Windows.Forms.Panel();
-            this.buttonLeft = new System.Windows.Forms.Button();
-            this.buttonRight = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonRight = new System.Windows.Forms.Button();
+            this.buttonLeft = new System.Windows.Forms.Button();
             this.panelInfo.SuspendLayout();
             this.panelButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelPhoto.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelInfo
@@ -141,28 +141,6 @@
             this.panelPhoto.Size = new System.Drawing.Size(576, 190);
             this.panelPhoto.TabIndex = 4;
             // 
-            // buttonLeft
-            // 
-            this.buttonLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonLeft.Location = new System.Drawing.Point(0, 0);
-            this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(47, 190);
-            this.buttonLeft.TabIndex = 0;
-            this.buttonLeft.Text = "<";
-            this.buttonLeft.UseVisualStyleBackColor = true;
-            // 
-            // buttonRight
-            // 
-            this.buttonRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonRight.Location = new System.Drawing.Point(529, 0);
-            this.buttonRight.Name = "buttonRight";
-            this.buttonRight.Size = new System.Drawing.Size(47, 190);
-            this.buttonRight.TabIndex = 1;
-            this.buttonRight.Text = ">";
-            this.buttonRight.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
@@ -180,38 +158,63 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(482, 190);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 170);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(170, 10);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(140, 170);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Location = new System.Drawing.Point(330, 10);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(10);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(142, 170);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Location = new System.Drawing.Point(170, 10);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(140, 170);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(140, 170);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // buttonRight
+            // 
+            this.buttonRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonRight.Location = new System.Drawing.Point(529, 0);
+            this.buttonRight.Name = "buttonRight";
+            this.buttonRight.Size = new System.Drawing.Size(47, 190);
+            this.buttonRight.TabIndex = 1;
+            this.buttonRight.Text = ">";
+            this.buttonRight.UseVisualStyleBackColor = true;
+            // 
+            // buttonLeft
+            // 
+            this.buttonLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLeft.Location = new System.Drawing.Point(0, 0);
+            this.buttonLeft.Name = "buttonLeft";
+            this.buttonLeft.Size = new System.Drawing.Size(47, 190);
+            this.buttonLeft.TabIndex = 0;
+            this.buttonLeft.Text = "<";
+            this.buttonLeft.UseVisualStyleBackColor = true;
             // 
             // FormMainScreen
             // 
@@ -229,9 +232,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelPhoto.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
