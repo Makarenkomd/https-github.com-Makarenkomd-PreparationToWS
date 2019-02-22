@@ -204,6 +204,7 @@
             this.buttonRight.TabIndex = 1;
             this.buttonRight.Text = ">";
             this.buttonRight.UseVisualStyleBackColor = true;
+            this.buttonRight.Click += new System.EventHandler(this.buttonRight_Click);
             // 
             // buttonLeft
             // 
