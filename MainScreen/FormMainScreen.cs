@@ -14,12 +14,13 @@ namespace MainScreen
     public partial class FormMainScreen : Form
     {
         List<string> img = new List<string>();
+        int currentIndexImg = 0;
 
         void showPicture()
         {
-            pictureBox1.Image = Image.FromFile(img[0]);
-            pictureBox2.Image = Image.FromFile(img[1]);
-            pictureBox3.Image = Image.FromFile(img[2]);
+            pictureBox1.Image = Image.FromFile(img[currentIndexImg]);
+            pictureBox2.Image = Image.FromFile(img[(currentIndexImg+1)%img.Count()]);
+            pictureBox3.Image = Image.FromFile(img[(currentIndexImg+2)%img.Count()]);
         }
         public FormMainScreen()
         {
@@ -32,7 +33,15 @@ namespace MainScreen
 
         private void buttonRight_Click(object sender, EventArgs e)
         {
+            currentIndexImg = (currentIndexImg+3) % img.Count();
+            showPicture();
 
+        }
+
+        private void buttonLeft_Click(object sender, EventArgs e)
+        {
+            currentIndexImg = (currentIndexImg - 3 +img.Count()) % img.Count();
+            showPicture();
         }
     }
 }
